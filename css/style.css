@@ -70,3 +70,127 @@ section h2::after{
     background-color: var(--secondary);
     margin: 0.5rem auto;
 }
+
+/* Profile Image Styles */
+.profile-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0.05));
+}
+
+/* About Section Image */
+.about-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-wrapper {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Hero Section Image Container */
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Tech Stack Icons */
+.tech-stack {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tech-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.tech-item:hover {
+    transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-image,
+    .image-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-img,
+    .image-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image,
+    .image-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-img,
+    .image-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Hero Section Layout */
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+@media (max-width: 992px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+}
