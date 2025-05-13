@@ -18,7 +18,7 @@ document.getElementById('header').innerHTML = `
                     </div>
                     <div class="hero-stats">
                         <div class="stat">
-                            <span class="stat-number">3+</span>
+                            <span class="stat-number">2+</span>
                             <span class="stat-label">Years Experience</span>
                         </div>
                         <div class="stat">
@@ -33,7 +33,7 @@ document.getElementById('header').innerHTML = `
                 </div>
                 <div class="hero-image">
                     <div class="image-container">
-                        <img src="assets/images/methu.jpg" alt="Methuselem MUNYANEZA" class="profile-image">
+                        <img src="assets/images/methu1.jpg" alt="Methuselem MUNYANEZA" class="profile-image">
                         <div class="image-overlay"></div>
                     </div>
                     <div class="tech-stack">
