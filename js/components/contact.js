@@ -46,3 +46,32 @@ document.getElementById('contact').innerHTML = `
         </div>
     </div>
 `;
+
+// Handle contact form submission
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+
+        try {
+            const response = await fetch('http://localhost:5000/send-message', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, email, subject, message })
+            });
+            const result = await response.json();
+            if (result.success) {
+                alert('Message sent successfully!');
+                contactForm.reset();
+            } else {
+                alert('Failed to send message. Please try again.');
+            }
+        } catch (error) {
+            alert('An error occurred. Please try again later.');
+        }
+    });
+}
