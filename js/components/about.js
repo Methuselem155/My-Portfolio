@@ -40,7 +40,7 @@ document.getElementById('about').innerHTML = `
                     </div>
                     <div class="about-image">
                         <div class="image-wrapper">
-                            <img src="assets/images/about-image.jpg" alt="Working on code" class="about-img">
+                            
                             <div class="experience-badge">
                                 <span class="years">3+</span>
                                 <span class="text">Years of<br>Experience</span>
@@ -77,10 +77,7 @@ document.getElementById('about').innerHTML = `
                             <i class="fas fa-shield-alt"></i>
                             <span>Cybersecurity</span>
                         </div>
-                        <div class="interest-item">
-                            <i class="fas fa-cloud"></i>
-                            <span>Cloud Computing</span>
-                        </div>
+                       
                     </div>
                 </div>
             </div>

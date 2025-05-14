@@ -125,8 +125,11 @@ section h2::after{
 /* Tech Stack Icons */
 .tech-stack {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     margin-top: 1rem;
+    margin-left: 150px;
 }
 
 .tech-item {
