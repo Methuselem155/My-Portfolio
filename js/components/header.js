@@ -22,8 +22,8 @@ document.getElementById('header').innerHTML = `
                             <span class="stat-label">Years Experience</span>
                         </div>
                         <div class="stat">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Projects Completed</span>
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Major Projects</span>
                         </div>
                         <div class="stat">
                             <span class="stat-number">100%</span>
@@ -46,11 +46,14 @@ document.getElementById('header').innerHTML = `
                         <div class="tech-item" title="JavaScript">
                             <i class="fab fa-js"></i>
                         </div>
-                        <div class="tech-item" title="React">
-                            <i class="fab fa-react"></i>
-                        </div>
                         <div class="tech-item" title="Node.js">
                             <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="tech-item" title="Flutter">
+                            <i class="fab fa-flutter"></i>
+                        </div>
+                        <div class="tech-item" title="MongoDB">
+                            <i class="fab fa-MongoDB"></i>
                         </div>
                     </div>
                 </div>

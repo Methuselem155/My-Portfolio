@@ -194,3 +194,194 @@ section h2::after{
         order: -1;
     }
 }
+
+.contact-form-box {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 2rem 2.5rem;
+    max-width: 400px;
+    margin: 2rem auto;
+  }
+  
+  #contactForm .form-group {
+    margin-bottom: 1.2rem;
+  }
+  
+  #contactForm label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+  
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: border 0.2s;
+  }
+  
+  #contactForm input:focus,
+  #contactForm textarea:focus {
+    border: 1.5px solid #007bff;
+    outline: none;
+    background: #fff;
+  }
+  
+  #contactForm button[type='submit'] {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  #contactForm button[type='submit']:hover {
+    background: #0056b3;
+  }
+
+/* Center the entire contact section */
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Center the contact info cards horizontally */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Style each contact card */
+.contact-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.2rem 2rem;
+  text-align: center;
+  min-width: 180px;
+}
+
+/* Center the contact form box */
+.contact-form-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Style the form itself */
+#contactForm {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Center the projects section */
+#projects .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2rem 2.5rem;
+  max-width: 350px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.project-tech {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.project-tech span {
+  background: var(--light);
+  color: var(--primary);
+  border-radius: 5px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    max-width: 95vw;
+    min-width: unset;
+  }
+}
+
+/* Center and box all main sections for a consistent look */
+section .container, #about .container, #skills .container, #experience .container, #services .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-box, .about-box, .skills-box, .experience-box, .services-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2rem 2.5rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+@media (max-width: 900px) {
+  .section-box, .about-box, .skills-box, .experience-box, .services-box {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+  }
+}
+
+/* Optional: Center text in section boxes */
+.section-box, .about-box, .skills-box, .experience-box, .services-box {
+  text-align: center;
+}
